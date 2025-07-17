@@ -5,7 +5,7 @@ module.exports = {
         node: true,
     },
     extends: ['eslint:recommended', 'plugin:angular/johnpapa', 'prettier'],
-    plugins: ['angular', 'prettier'],
+    plugins: ['html', 'angular', 'prettier'],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -13,11 +13,10 @@ module.exports = {
     rules: {
         'prettier/prettier': 'error',
 
-        'angular/module-getter': 'error',
-        'angular/module-setter': 'error',
         'angular/no-private-call': 'error',
         'angular/component-limit': ['error', 1],
-        'angular/controller-as-route': 'error',
+        'angular/controller-as-route': 'off',
+        'angular/controller-name': ['error', '/^[a-z][a-zA-Z0-9]*Controller$/'],
         'angular/deferred': 'error',
         'angular/di-unused': 'error',
         'angular/directive-restrict': 'error',
@@ -26,12 +25,8 @@ module.exports = {
         'angular/no-inline-template': 'error',
         'angular/no-run-logic': 'error',
         'angular/no-services': ['error', ['$http', '$resource']],
-        'angular/on-watch': 'error',
         'angular/prefer-component': 'off', // Allow directives for AngularJS 1.x
-        'angular/no-cookiestore': 'error',
         'angular/no-directive-replace': 'error',
-        'angular/no-http-callback': 'error',
-        'angular/function-type': 'error',
         'angular/definedundefined': 'error',
         'angular/typecheck-array': 'error',
         'angular/typecheck-date': 'error',
@@ -49,8 +44,9 @@ module.exports = {
         'angular/log': 'error',
         'angular/no-angular-mock': 'error',
         'angular/no-jquery-angularelement': 'error',
-        'angular/timeout-service': 'error',
-        'angular/window-service': 'error',
+        'angular/file-name': 'off',
+        'angular/module-getter': 'off',
+        'angular/service-name': 'off',
 
         'no-console': 'warn',
         'no-unused-vars': 'error',
