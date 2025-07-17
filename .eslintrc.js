@@ -4,22 +4,15 @@ module.exports = {
         es6: true,
         node: true,
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:angular/johnpapa',
-        'prettier',
-    ],
-    plugins: [
-        'angular',
-        'prettier',
-    ],
+    extends: ['eslint:recommended', 'plugin:angular/johnpapa', 'prettier'],
+    plugins: ['angular', 'prettier'],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
     },
     rules: {
         'prettier/prettier': 'error',
-        
+
         'angular/module-getter': 'error',
         'angular/module-setter': 'error',
         'angular/no-private-call': 'error',
@@ -71,9 +64,9 @@ module.exports = {
         'no-multiple-empty-lines': ['error', { max: 2 }],
         'eol-last': 'error',
         'comma-dangle': ['error', 'always-multiline'],
-        'quotes': ['error', 'single'],
-        'semi': ['error', 'always'],
-        'indent': ['error', 4],
+        quotes: ['error', 'single'],
+        semi: ['error', 'always'],
+        indent: ['error', 4],
         'no-trailing-spaces': 'error',
     },
     globals: {
