@@ -1,7 +1,8 @@
+// eslint-disable-next-line simple-import-sort/imports
+import angular from 'angular';
+
 import 'angular-route';
 import 'angular-translate';
-
-import angular from 'angular';
 
 /** Manages the main AngularJS module ('myApp'). */
 class AppModule {
