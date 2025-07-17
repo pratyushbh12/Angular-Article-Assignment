@@ -1,4 +1,4 @@
-import { footer } from '../../template';
+import { footer } from '@template';
 
 export const footerComponent = () => {
     return {

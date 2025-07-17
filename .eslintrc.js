@@ -5,7 +5,7 @@ module.exports = {
         node: true,
     },
     extends: ['eslint:recommended', 'plugin:angular/johnpapa', 'prettier'],
-    plugins: ['html', 'angular', 'prettier'],
+    plugins: ['html', 'angular', 'prettier', 'simple-import-sort'],
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -13,6 +13,8 @@ module.exports = {
     rules: {
         'prettier/prettier': 'error',
 
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
         'angular/no-private-call': 'error',
         'angular/component-limit': ['error', 1],
         'angular/controller-as-route': 'off',

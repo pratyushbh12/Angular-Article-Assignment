@@ -45,6 +45,15 @@ module.exports = {
     hot: true
   },
   resolve: {
-    extensions: ['.js', '.json']
+    extensions: ['.js', '.json'],
+    alias:{
+        '@components': path.resolve(__dirname, 'src/components/'),
+        '@controllers': path.resolve(__dirname, 'src/controllers/'),
+        '@module':path.resolve(__dirname,'src/module'),
+        '@router': path.resolve(__dirname, 'src/router/'),
+        '@services': path.resolve(__dirname, 'src/services/'),
+        '@template': path.resolve(__dirname, 'src/template/'),
+        '@translations': path.resolve(__dirname, 'src/translations/'),
+    }
   }
 };

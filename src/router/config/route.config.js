@@ -1,4 +1,4 @@
-import {home,login,signUp,error,createArticle,articleDetails,articleList,profile,notFound} from '../../template';
+import {articleDetails,articleList,createArticle,error,home,login,notFound,profile,signUp} from '@template';
 
 /**
  * Configures the application's routes and URL hash prefix.

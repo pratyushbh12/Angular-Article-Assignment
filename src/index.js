@@ -1,8 +1,8 @@
-import { main } from './module';
-import { TestController } from './controllers';
-import { i18nConfig } from './translations/i18n/i18n.config';
-import { routeConfig } from './router';
-import { headerComponent, footerComponent } from './components';
+import { footerComponent, headerComponent } from '@components';
+import { TestController } from '@controllers';
+import { main } from '@module';
+import { routeConfig } from '@router';
+import { i18nConfig } from '@translations';
 
 /** Main Module */
 const app = main.module;
