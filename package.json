@@ -10,6 +10,7 @@
         "build": "webpack --mode production",
         "dev": "webpack --mode development --watch",
         "lint": "eslint src/**/*.js",
+        "postinstall": "husky install",
         "lint:fix": "eslint src/**/*.js --fix",
         "format": "prettier --write src/**/*.{js,html,css}",
         "format:check": "prettier --check src/**/*.{js,html,css}"
