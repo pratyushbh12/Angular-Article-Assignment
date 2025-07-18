@@ -22,7 +22,6 @@ export const headerCtrl = [
         $scope.isNavigatingBack = false;
         $scope.prevLocations = [];
         $scope.lang = $translate.proposedLanguage();
-        $scope.languages = $translate.getAvailableLanguageKeys();
 
         $rootScope.$on('$locationChangeSuccess', (_event, newUrl, oldUrl) => {
             if ($scope.isNavigatingBack) {
