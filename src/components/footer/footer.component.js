@@ -1,3 +1,4 @@
+import { footerCtrl } from '@controllers';
 import { footer } from '@template';
 
 /**
@@ -8,5 +9,7 @@ import { footer } from '@template';
 export const footerComponent = () => {
     return {
         template: footer,
+        controller: footerCtrl,
+        styleUrls: ['@styles/components/footer.stylesheet.css'],
     };
 };

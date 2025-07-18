@@ -1,3 +1,5 @@
+import './stylesheet/index.css';
+
 import { footerComponent, headerComponent } from '@components';
 import { TestController } from '@controllers';
 import { main } from '@module';
