@@ -1,9 +1,9 @@
 export const footerCtrl = [
     '$translate',
-    '$rootscope',
-    ($translate, $rootscope) => {
+    '$rootScope',
+    ($translate, $rootScope) => {
         const ctrl = this;
-        $rootscope.on('$translateChangeSuccess', () => {
+        $rootScope.$on('$translateChangeSuccess', () => {
             $translate('footerText').then(
                 (translation) => {
                     ctrl.footerText = translation;
