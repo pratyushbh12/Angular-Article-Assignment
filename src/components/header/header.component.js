@@ -1,3 +1,4 @@
+import { headerCtrl } from '@controllers';
 import { header } from '@template';
 
 /**
@@ -8,5 +9,6 @@ import { header } from '@template';
 export const headerComponent = () => {
     return {
         template: header,
+        controller: headerCtrl,
     };
 };

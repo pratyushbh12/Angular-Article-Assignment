@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--component-bg);
+    border-bottom: 2px solid var(--component-border-color);
+    box-shadow: var(--bottom-box-shadow);
+}
+
+.header__content {
+    display: flex;
+    gap: 1rem;
+}
+.header__nav-list {
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
