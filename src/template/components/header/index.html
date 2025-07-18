@@ -1,1 +1,40 @@
-<h1>HEADER</h1>
+<header class="header">
+    <div class="header__back-btn">
+        <button class="button" ng-click="backClickHandler()">
+            {{'header.back' | translate}}
+        </button>
+    </div>
+    <div class="header__content">
+        <nav>
+            <ul class="header__nav-list" ng-if="isLoggedIn()">
+                <li><a href="#/">List </a></li>
+                <li>
+                    <a href="#/create-article"
+                        >{{'header.createArticle' | translate}}</a
+                    >
+                </li>
+                <li>
+                    <a href="#/profile/12">{{'header.profile' | translate}}</a>
+                </li>
+            </ul>
+        </nav>
+        <button
+            class="button"
+            ng-click="logoutBtnHandler()"
+            ng-show="isLoggedIn()"
+        >
+            {{'header.logoutButtonText' | translate}}
+        </button>
+        <button
+            class="button"
+            ng-click="loginBtnHandler()"
+            ng-hide="isLoggedIn()"
+        >
+            {{'header.loginButtonText' | translate}}
+        </button>
+        <select ng-model="lang" ng-change="changeLang(lang)">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+    </div>
+</header>

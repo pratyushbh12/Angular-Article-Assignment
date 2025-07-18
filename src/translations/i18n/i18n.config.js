@@ -11,6 +11,6 @@ export const i18nConfig = [
     ($translateProvider) => {
         $translateProvider.translations('en', ENGLISH_TRANSLATION_KEYS);
         $translateProvider.translations('es', SPANISH_TRANSLATION_KEYS);
-        $translateProvider.preferredLanguage('es').useSanitizeValueStrategy('escape');
+        $translateProvider.preferredLanguage('en').useSanitizeValueStrategy('escape');
     },
 ];
