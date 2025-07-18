@@ -1,6 +1,10 @@
 <header class="header">
     <div class="header__back-btn">
-        <button class="button" ng-click="backClickHandler()">
+        <button
+            ng-show="prevLocations.length>0"
+            class="button"
+            ng-click="backClickHandler()"
+        >
             {{'header.back' | translate}}
         </button>
     </div>
