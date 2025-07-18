@@ -1,8 +1,14 @@
 body {
     /* colors */
-    --footer-bg: #b0bec5;
-    --footer-border-color: #455a64;
+    --component-bg: #bdbdbd;
+    --component-border-color: #455a64;
+    --btn-font-color: #e0e0e0;
+    --btn-bg: #212121;
 
     /* border radius */
     --border-radius: 1.5rem;
+    --btn-border-radius: 60px;
+
+    /* box shadow*/
+    --bottom-box-shadow: 0px 1px 18px 5px rgba(0, 0, 0, 0.75);
 }

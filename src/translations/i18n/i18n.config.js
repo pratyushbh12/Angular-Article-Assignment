@@ -10,7 +10,7 @@ export const i18nConfig=['$translateProvider', ($translateProvider)=>{
     $translateProvider.translations('en', ENGLISH_TRANSLATION_KEYS);
     $translateProvider.translations('es', SPANISH_TRANSLATION_KEYS);
     $translateProvider
-        .preferredLanguage('es')
+        .preferredLanguage('en')
         .useSanitizeValueStrategy('escape');
 },
 ];
