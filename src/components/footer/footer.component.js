@@ -10,6 +10,5 @@ export const footerComponent = () => {
     return {
         template: footer,
         controller: footerCtrl,
-        styleUrls: ['@styles/components/footer.stylesheet.css'],
     };
 };
