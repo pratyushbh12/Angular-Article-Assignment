@@ -8,7 +8,7 @@
  * @param {object} authService Service for managing user authentication.
  * @param {object} $rootScope The root scope, used to listen for global location change events.
  */
-export const headerCtrl = [
+export const headerController = [
     '$scope',
     '$translate',
     '$location',
