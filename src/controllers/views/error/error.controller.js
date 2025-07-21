@@ -8,6 +8,7 @@ export const errorController = [
         }
         $scope.errorCode = authService.getError();
         $scope.navigateHome = () => {
+            authService.setError(null);
             $location.path('/');
         };
     },
