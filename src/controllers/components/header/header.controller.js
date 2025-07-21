@@ -31,10 +31,7 @@ export const headerController = [
             if (newUrl != oldUrl && newUrl.split('#')[1] != '/error') {
                 // Used to check if the new page is already the latest previous visited page.
                 // Used to handle case of going from home page to error page and then back to home page.
-                if (
-                    $scope.prevLocations[$scope.prevLocations.length - 1] !=
-                    newUrl.split('#')[1]
-                ) {
+                if ($scope.prevLocations[$scope.prevLocations.length - 1] != newUrl.split('#')[1]) {
                     $scope.prevLocations.push(oldUrl.split('#')[1]);
                 }
                 if (oldUrl.split('#')[1] == '/error') {
