@@ -1,9 +1,7 @@
 import { header } from '@template';
 
 /**
- * Factory function for the header component.
- *
- * @returns {object} The component definition object containing the template.
+ * Config for the header component.
  */
 export const headerComponent = {
     template: header,
