@@ -2,6 +2,6 @@
  * ESLint linting to all staged files
  */
 module.exports = {
-    '*': 'eslint --fix',
-    '**/*': 'prettier --write',
+    'src/**/*.{js,html}': 'eslint --fix',
+    '**/*.{js,html,css,json,md}': 'prettier --write',
 };
