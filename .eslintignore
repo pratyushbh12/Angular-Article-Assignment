@@ -6,7 +6,6 @@ dist/
 build/
 
 # Config files
-webpack.config.js
 .eslintrc.js
 
 # Logs

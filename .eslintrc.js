@@ -12,7 +12,6 @@ module.exports = {
     },
     rules: {
         'prettier/prettier': 'error',
-
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error',
         'angular/no-private-call': 'error',
@@ -27,7 +26,6 @@ module.exports = {
         'angular/no-inline-template': 'error',
         'angular/no-run-logic': 'error',
         'angular/no-services': ['error', ['$http', '$resource']],
-        'angular/prefer-component': 'off', // Allow directives for AngularJS 1.x
         'angular/no-directive-replace': 'error',
         'angular/typecheck-array': 'error',
         'angular/typecheck-date': 'error',

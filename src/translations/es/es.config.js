@@ -1,3 +1,3 @@
-export const SPANISH_TRANSLATION_KEYS={
-    'helloWorld':'Hola Mundo',
+export const SPANISH_TRANSLATION_KEYS = {
+    helloWorld: 'Hola Mundo',
 };
