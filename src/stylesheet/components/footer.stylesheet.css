@@ -1,0 +1,9 @@
+.footer {
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--footer-bg);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--footer-border-color);
+    text-align: center;
+}
