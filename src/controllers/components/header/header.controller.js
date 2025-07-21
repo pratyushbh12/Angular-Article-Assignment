@@ -28,8 +28,11 @@ export const headerController = [
                 $scope.isNavigatingBack = false;
                 return;
             }
-            if (newUrl != oldUrl) {
+            if (newUrl != oldUrl && newUrl.split('#')[1] != '/error') {
                 $scope.prevLocations.push(oldUrl.split('#')[1]);
+                if (oldUrl.split('#')[1] == '/error') {
+                    $scope.prevLocations.pop();
+                }
             }
         });
 

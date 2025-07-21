@@ -5,40 +5,61 @@
  * @returns {object} The authentication service with methods to log in, log out,
  * and check the current login status.
  */
-export const authService = function () {
-    let loggedIn = false;
+export const authService = [
+    '$location',
+    function ($location) {
+        let loggedIn = false;
+        let error = null;
 
-    /**
-     * Marks the user as logged in.
-     * @returns {boolean} The new authentication state (true).
-     */
-    function login() {
-        loggedIn = true;
-        return loggedIn;
-    }
+        /**
+         * Marks the user as logged in.
+         * @returns {boolean} The new authentication state (true).
+         */
+        function login() {
+            loggedIn = true;
+            return loggedIn;
+        }
 
-    /**
-     * Marks the user as logged out.
-     * @returns {boolean} The new authentication state (false).
-     */
-    function logout() {
-        loggedIn = false;
-        return loggedIn;
-    }
+        /**
+         * Marks the user as logged out.
+         * @returns {boolean} The new authentication state (false).
+         */
+        function logout() {
+            loggedIn = false;
+            return loggedIn;
+        }
 
-    /**
-     * Checks if the user is currently logged in.
-     * @returns {boolean} The current authentication state.
-     */
-    function isLoggedIn() {
-        return loggedIn;
-    }
+        /**
+         * Checks if the user is currently logged in.
+         * @returns {boolean} The current authentication state.
+         */
+        function isLoggedIn() {
+            return loggedIn;
+        }
 
-    const services = {
-        login,
-        logout,
-        isLoggedIn,
-    };
+        function isError() {
+            return error != null;
+        }
 
-    return services;
-};
+        function setError(err) {
+            error = err;
+            $location.path('/error');
+            return error;
+        }
+
+        function getError() {
+            return error;
+        }
+
+        const services = {
+            login,
+            logout,
+            isLoggedIn,
+            isError,
+            getError,
+            setError,
+        };
+
+        return services;
+    },
+];
