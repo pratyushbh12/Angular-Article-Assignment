@@ -37,16 +37,29 @@ export const authService = [
             return loggedIn;
         }
 
+        /**
+         * Checks if an error is currently active in the service.
+         * @returns {boolean} True if an error is set, otherwise false.
+         */
         function isError() {
             return error != null;
         }
 
+        /**
+         * Sets the application's global error state and redirects to the error page.
+         * @param {*} err - The error object or message to be stored.
+         * @returns {*} The error that was set.
+         */
         function setError(err) {
             error = err;
             $location.path('/error');
             return error;
         }
 
+        /**
+         * Retrieves the currently stored error object.
+         * @returns {*} The current error, or null if no error is active.
+         */
         function getError() {
             return error;
         }
