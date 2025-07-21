@@ -29,7 +29,12 @@ export const headerController = [
                 return;
             }
             if (newUrl != oldUrl && newUrl.split('#')[1] != '/error') {
-                $scope.prevLocations.push(oldUrl.split('#')[1]);
+                if (
+                    $scope.prevLocations[$scope.prevLocations.length - 1] !=
+                    newUrl.split('#')[1]
+                ) {
+                    $scope.prevLocations.push(oldUrl.split('#')[1]);
+                }
                 if (oldUrl.split('#')[1] == '/error') {
                     $scope.prevLocations.pop();
                 }
