@@ -1,5 +1,5 @@
 /** This configuration applies Prettier formatting,
- * ESLint linting to all staged `.js`, `.html` and `.css. files
+ * ESLint linting to all staged files
  */
 module.exports = {
     '*': 'eslint --fix',
