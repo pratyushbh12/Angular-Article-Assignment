@@ -1,42 +1,32 @@
 <header class="header">
     <div class="header__back-btn">
-        <button
-            ng-show="prevLocations.length>0"
-            class="button"
-            ng-click="backClickHandler()"
-        >
+        <button ng-show="prevLocations.length>0" class="button" ng-click="backClickHandler()">
             {{'header.back' | translate}}
         </button>
     </div>
     <div class="header__content">
         <nav>
             <ul class="header__nav-list" ng-if="isLoggedIn()">
-                <li><a href="#/">List </a></li>
+                <li><a href="#/">List</a></li>
                 <li>
-                    <a href="#/create-article"
-                        >{{'header.createArticle' | translate}}</a
-                    >
+                    <a href="#/create-article">{{'header.createArticle' | translate}}</a>
                 </li>
                 <li>
                     <a href="#/profile">{{'header.profile' | translate}}</a>
                 </li>
             </ul>
         </nav>
-        <button
-            class="button"
-            ng-click="logoutBtnHandler()"
-            ng-show="isLoggedIn()"
-        >
+        <button class="button" ng-click="logoutBtnHandler()" ng-show="isLoggedIn()">
             {{'header.logoutButtonText' | translate}}
         </button>
-        <button
-            class="button"
-            ng-click="loginBtnHandler()"
-            ng-hide="isLoggedIn()"
-        >
+        <button class="button" ng-click="loginBtnHandler()" ng-show="!isLoggedIn()">
             {{'header.loginButtonText' | translate}}
         </button>
-        <select ng-model="lang" ng-change="changeLang(lang)">
+        <select
+            ng-model="lang"
+            ng-change="changeLang(lang)"
+            aria-label="{{'header.languageSelector' | translate}}"
+        >
             <option value="es">ES</option>
             <option value="en">EN</option>
         </select>

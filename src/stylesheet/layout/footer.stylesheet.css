@@ -1,6 +1,6 @@
 .footer {
     margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
     background-color: var(--component-bg);
     padding: 0.5rem;
     border-radius: var(--border-radius);

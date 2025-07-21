@@ -4,6 +4,7 @@ body {
     --component-border-color: #455a64;
     --btn-font-color: #e0e0e0;
     --btn-bg: #212121;
+    --btn-hover-bg: #323232;
 
     /* border radius */
     --border-radius: 1.5rem;

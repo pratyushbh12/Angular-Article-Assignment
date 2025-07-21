@@ -34,9 +34,19 @@ export const headerController = [
         });
 
         $scope.backClickHandler = function () {
+            if ($scope.prevLocations.length === 0) {
+                return;
+            }
             const oldUrl = $scope.prevLocations.pop();
+            if (!oldUrl || oldUrl === $location.path()) {
+                return;
+            }
             $scope.isNavigatingBack = true;
-            $location.path(oldUrl);
+            try {
+                $location.path(oldUrl);
+            } catch (error) {
+                $scope.isNavigatingBack = false;
+            }
         };
     },
 ];
