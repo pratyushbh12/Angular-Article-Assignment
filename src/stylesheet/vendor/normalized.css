@@ -3,13 +3,6 @@
 /* Document
    ========================================================================== */
 
-/** 
- * Applying border box sizing to all elements in all browser
- */
-* {
-    box-sizing: border-box;
-}
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -17,7 +10,6 @@
 
 html {
     line-height: 1.15; /* 1 */
-    font-size: 62.5%;
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
