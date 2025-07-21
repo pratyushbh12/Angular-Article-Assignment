@@ -5,8 +5,6 @@ import { footer } from '@template';
  *
  * @returns {object} The component definition object containing the template.
  */
-export const footerComponent = () => {
-    return {
-        template: footer,
-    };
+export const footerComponent = {
+    template: footer,
 };

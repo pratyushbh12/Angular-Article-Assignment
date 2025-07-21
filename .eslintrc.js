@@ -29,7 +29,6 @@ module.exports = {
         'angular/no-services': ['error', ['$http', '$resource']],
         'angular/prefer-component': 'off', // Allow directives for AngularJS 1.x
         'angular/no-directive-replace': 'error',
-        'angular/definedundefined': 'error',
         'angular/typecheck-array': 'error',
         'angular/typecheck-date': 'error',
         'angular/typecheck-function': 'error',

@@ -49,7 +49,7 @@ module.exports = {
     alias:{
         '@components': path.resolve(__dirname, 'src/components/'),
         '@controllers': path.resolve(__dirname, 'src/controllers/'),
-        '@module':path.resolve(__dirname,'src/module'),
+        '@module': path.resolve(__dirname,'src/module'),
         '@router': path.resolve(__dirname, 'src/router/'),
         '@services': path.resolve(__dirname, 'src/services/'),
         '@template': path.resolve(__dirname, 'src/template/'),

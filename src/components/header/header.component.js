@@ -5,8 +5,6 @@ import { header } from '@template';
  *
  * @returns {object} The component definition object containing the template.
  */
-export const headerComponent = () => {
-    return {
-        template: header,
-    };
+export const headerComponent = {
+    template: header,
 };

@@ -9,12 +9,14 @@ export const TestController = [
     '$translate',
     ($scope, $translate) => {
         $translate('helloWorld').then(
-            (translations) => {
-                $scope.helloWorld = translations.helloWorld;
-            },
-            (translationIds) => {
-                $scope.helloWorld = translationIds.helloWorld;
-            },
+            $translate('helloWorld').then(
+                (translation) => {
+                    $scope.helloWorld = translation;
+                },
+                (translationId) => {
+                    $scope.helloWorld = translationId;
+                },
+            ),
         );
     },
 ];

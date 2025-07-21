@@ -12,8 +12,8 @@ app.config(routeConfig);
 app.config(i18nConfig);
 
 /**Module components */
-app.component('headerComp', headerComponent());
-app.component('footerComp', footerComponent());
+app.component('headerComp', headerComponent);
+app.component('footerComp', footerComponent);
 
 /** Module controllers */
 app.controller('myController', TestController);

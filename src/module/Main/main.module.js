@@ -30,6 +30,9 @@ class AppModule {
      * @param {object} newModule The new AngularJS module instance.
      */
     set module(newModule) {
+        if (newModule && angular.isString(newModule.name)) {
+            throw new Error('Invalid AngularJS module provided');
+        }
         this._module = newModule;
     }
 }
