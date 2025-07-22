@@ -34,6 +34,7 @@ export const routeConfig = [
             })
             .when('/error', {
                 template: error,
+                controller: 'errorController',
             })
             .when('/create-article', {
                 template: createArticle,
@@ -46,9 +47,11 @@ export const routeConfig = [
             })
             .when('/profile', {
                 template: profile,
+                controller: 'profileController',
             })
             .otherwise({
                 template: notFound,
+                controller: 'notFoundController',
             });
     },
 ];

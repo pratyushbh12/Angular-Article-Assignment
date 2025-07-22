@@ -1,6 +1,7 @@
 .header {
     align-items: center;
     display: flex;
+    max-height: var(--header-height);
     justify-content: space-between;
     padding: 2rem;
     background-color: var(--component-bg);

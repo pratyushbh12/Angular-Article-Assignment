@@ -11,4 +11,19 @@ export const ENGLISH_TRANSLATION_KEYS = {
     footer: {
         footerText: '2025 Articles. All rights reserved.',
     },
+    error: {
+        title: 'Oops!',
+        subTitle: 'Something Went Wrong',
+        errorLable: 'Error',
+        // eslint-disable-next-line prettier/prettier
+        body: 'We\'re sorry for the inconvenience. An unexpected technical error has occurred. Our team has been automatically notified and we are working to fix the issue.',
+        buttonText: 'Go Back To Home',
+    },
+    notFound: {
+        title: 'Page Not Found',
+        subTitle: 'Error 404',
+        // eslint-disable-next-line prettier/prettier
+        body: 'Sorry, the page you are looking for doesn\'t seem to exist. It might have been moved, deleted, or the link you followed was incorrect.',
+        buttonText: 'Go Back To Home',
+    },
 };

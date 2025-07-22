@@ -12,4 +12,8 @@ body {
 
     /* box shadow*/
     --bottom-box-shadow: 0px 1px 18px 5px rgba(0, 0, 0, 0.75);
+
+    /* heights */
+    --header-height: 7rem;
+    --footer-height: 5rem;
 }

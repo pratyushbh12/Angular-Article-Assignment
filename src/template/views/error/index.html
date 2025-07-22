@@ -1,1 +1,9 @@
-<h1>Error</h1>
+<main class="error">
+    <div class="error__box">
+        <h1>{{'error.title' | translate}}</h1>
+        <h2>{{'error.subTitle' | translate}}</h2>
+        <p><span>{{'error.errorLabel' | translate}}: </span>{{ errorCode }}</p>
+        <p>{{'error.body' | translate}}</p>
+        <button class="button" ng-click="navigateHome()">{{'error.buttonText' | translate}}</button>
+    </div>
+</main>

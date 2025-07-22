@@ -6,3 +6,5 @@
 
 @import url('./layout/header.stylesheet.css');
 @import url('./layout/footer.stylesheet.css');
+@import url('./layout/error.stylesheet.css');
+@import url('./layout/notFound.stylesheet.css');

@@ -1,0 +1,20 @@
+.notFound {
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound__box {
+    width: min(50%, 400px);
+    max-width: 90vw;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--component-border-color);
+    padding: 1rem 2rem;
+    background-color: var(--component-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
