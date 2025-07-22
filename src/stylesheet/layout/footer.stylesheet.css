@@ -1,0 +1,9 @@
+.footer {
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: var(--component-bg);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--component-border-color);
+    text-align: center;
+}

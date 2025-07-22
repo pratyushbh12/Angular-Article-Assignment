@@ -54,6 +54,7 @@ module.exports = {
             '@services': path.resolve(__dirname, 'src/services/'),
             '@template': path.resolve(__dirname, 'src/template/'),
             '@translations': path.resolve(__dirname, 'src/translations/'),
+            '@styles': path.resolve(__dirname, 'src/stylesheets/'),
         },
     },
 };
