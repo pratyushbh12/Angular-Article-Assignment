@@ -3,11 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 auto;
 }
 
 .notFound__box {
-    width: 50%;
+    width: min(50%, 400px);
+    max-width: 90vw;
     border-radius: var(--border-radius);
     border: 2px solid var(--component-border-color);
     padding: 1rem 2rem;

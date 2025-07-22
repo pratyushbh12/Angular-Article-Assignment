@@ -13,6 +13,7 @@ export const authService = [
 
         /**
          * Marks the user as logged in.
+         *
          * @returns {boolean} The new authentication state (true).
          */
         function login() {
@@ -22,6 +23,7 @@ export const authService = [
 
         /**
          * Marks the user as logged out.
+         *
          * @returns {boolean} The new authentication state (false).
          */
         function logout() {
@@ -31,6 +33,7 @@ export const authService = [
 
         /**
          * Checks if the user is currently logged in.
+         *
          * @returns {boolean} The current authentication state.
          */
         function isLoggedIn() {
@@ -39,6 +42,7 @@ export const authService = [
 
         /**
          * Checks if an error is currently active in the service.
+         *
          * @returns {boolean} True if an error is set, otherwise false.
          */
         function isError() {
@@ -47,6 +51,7 @@ export const authService = [
 
         /**
          * Sets the application's global error state and redirects to the error page.
+         *
          * @param {*} err - The error object or message to be stored.
          * @returns {*} The error that was set.
          */
@@ -57,7 +62,16 @@ export const authService = [
         }
 
         /**
+         * Clears the auth error.
+         * @returns null
+         */
+        function clearError() {
+            error = null;
+        }
+
+        /**
          * Retrieves the currently stored error object.
+         *
          * @returns {*} The current error, or null if no error is active.
          */
         function getError() {
@@ -71,6 +85,7 @@ export const authService = [
             isError,
             getError,
             setError,
+            clearError,
         };
 
         return services;

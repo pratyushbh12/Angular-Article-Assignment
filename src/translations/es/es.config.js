@@ -14,8 +14,9 @@ export const SPANISH_TRANSLATION_KEYS = {
     error: {
         title: '¡Uy!',
         subTitle: 'Algo salió mal',
+        errorLable: 'Error',
         body: 'Lamentamos las molestias. Ha ocurrido un error técnico inesperado. Nuestro equipo ha sido notificado automáticamente y estamos trabajando para solucionarlo.',
-        buttonText: 'Volver al inici',
+        buttonText: 'Volver al inicio',
     },
     notFound: {
         title: 'Página no encontrada',

@@ -17,7 +17,7 @@ export const errorController = [
         }
         $scope.errorCode = authService.getError();
         $scope.navigateHome = () => {
-            authService.setError(null);
+            authService.clearError();
             $location.path('/');
         };
     },

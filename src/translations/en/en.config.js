@@ -14,6 +14,7 @@ export const ENGLISH_TRANSLATION_KEYS = {
     error: {
         title: 'Oops!',
         subTitle: 'Something Went Wrong',
+        errorLable: 'Error',
         // eslint-disable-next-line prettier/prettier
         body: 'We\'re sorry for the inconvenience. An unexpected technical error has occurred. Our team has been automatically notified and we are working to fix the issue.',
         buttonText: 'Go Back To Home',
