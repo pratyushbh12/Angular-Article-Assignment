@@ -3,5 +3,5 @@
  */
 module.exports = {
     'src/**/*.{js,html}': 'eslint --fix',
-    '**/*.{js,html,css,json,md}': 'prettier --write',
+    '**/*': 'prettier --write',
 };
