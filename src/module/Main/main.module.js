@@ -1,0 +1,40 @@
+// eslint-disable-next-line simple-import-sort/imports
+import angular from 'angular';
+
+import 'angular-route';
+import 'angular-translate';
+
+/** Manages the main AngularJS module ('myApp'). */
+class AppModule {
+    /** Initializes the module's core dependencies. */
+    constructor() {
+        this._module = null;
+        this._dependencies = ['ngRoute', 'pascalprecht.translate'];
+    }
+
+    /**
+     * Lazily creates and returns the main AngularJS module instance.
+     *
+     * @returns {object} The main AngularJS module.
+     */
+    get module() {
+        if (!this._module) {
+            this._module = angular.module('myApp', this._dependencies);
+        }
+        return this._module;
+    }
+
+    /**
+     * Sets the module instance, primarily for testing purposes.
+     *
+     * @param {object} newModule The new AngularJS module instance.
+     */
+    set module(newModule) {
+        if (newModule && angular.isString(newModule.name)) {
+            throw new Error('Invalid AngularJS module provided');
+        }
+        this._module = newModule;
+    }
+}
+
+export const main = new AppModule();
